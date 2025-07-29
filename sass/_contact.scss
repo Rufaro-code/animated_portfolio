@@ -1,13 +1,35 @@
 #contact {
-  .contact-detail, address {
-    max-width: 800px;
-    display: block;
-    margin: 0 auto;
-  }
+  padding: 60px 15px;
+
+  .contact-detail,
   address {
-    margin-top: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 1.6;
+  }
+
+  address {
+    margin-top: 40px;
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
     a {
       text-decoration: none;
+      color: #333;
+
+      &:hover {
+        color: #FF5100;
+        text-decoration: underline;
+      }
     }
   }
 }

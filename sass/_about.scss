@@ -2,33 +2,56 @@
   .content {
     h2 {
       text-align: center;
+      margin-bottom: 20px;
     }
   }
+
   .about-container {
     display: block;
+
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
-      
+      gap: 20px;
     }
   }
+
   .about-container-left {
     flex-basis: 40%;
     background: #DEF0FF;
-    padding: 30px 15px;
+    padding: 20px 15px;
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
     li {
       font-style: italic;
-      line-height: 1.9;
+      line-height: 1.8;
+      font-size: 14px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
+
   .about-container-right {
     flex-basis: 60%;
     background: #F2F3F8;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
+
     img {
       max-width: 100%;
-      align-self: flex-start;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+
       @media screen and (min-width: 1200px) {
         align-self: stretch;
       }

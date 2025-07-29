@@ -1,22 +1,37 @@
 .promo {
   background-color: #DEF0FF;
+  padding: 40px 15px;
+
   .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
     h2 {
-      font-size: 36px;
+      font-size: 28px;
       font-weight: 300;
       color: #222;
       text-shadow: 0 1px 2px #222;
+      line-height: 1.2;
+      margin-bottom: 15px;
+
       @media screen and (min-width: 768px) {
-        font-size: 70px;
+        font-size: 56px;
       }
+
       span.orange {
         font-weight: 700;
+        color: #FF5100;
       }
     }
+
     p {
-      font-size: 22px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #333;
+
       @media screen and (min-width: 768px) {
-        font-size: 36px;
+        font-size: 28px;
       }
     }
   }

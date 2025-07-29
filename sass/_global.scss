@@ -1,46 +1,69 @@
 html {
   line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: 'Oxygen', sans-serif;
   position: relative;
   overflow-x: hidden;
+  background-color: #fff;
+  color: #333;
 }
+
 section {
-  padding: 90px 15px;
+  padding: 60px 15px;
+
+  @media screen and (min-width: 768px) {
+    padding: 90px 15px;
+  }
 }
+
 .content {
   max-width: 1200px;
-  display: block;
   margin: 0 auto;
+  display: block;
 }
+
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px 0 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
+
 .bold {
   font-weight: 700;
 }
+
 .orange {
-  color: #FF5100
+  color: #FF5100;
 }
+
 h2 {
-  font-size: 36px;
+  font-size: 28px;
   margin: 5px 0 10px;
+
   @media screen and (min-width: 768px) {
     font-size: 70px;
     color: #848484;
     font-weight: 700;
   }
 }
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
+
 .center {
   text-align: center;
 }
